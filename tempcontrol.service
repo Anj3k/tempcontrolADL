@@ -1,0 +1,9 @@
+[Unit]
+Description=Throttle CPU and GPU to keep temperatures down.
+
+[Service]
+ExecStart=/usr/sbin/tempcontrol
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
